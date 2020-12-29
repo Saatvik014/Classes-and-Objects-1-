@@ -1,0 +1,33 @@
+Question)Fix the program called SomethingIsWrong shown in Question 1.
+
+public class SomethingIsWrong {
+    public static void main(String[] args) {
+        Rectangle myRect;
+        myRect.width = 40;
+        myRect.height = 50;
+        System.out.println("myRect's area is " + myRect.area());
+    }
+}
+
+Answer)
+public class Rectangle
+{
+    int width; //Creating a global variable
+    int height;
+    int area;
+   void area() //Declaring a function
+   {
+     area=(width*height); // Formula to find area of Rectangle
+    System.out.println("myRect's area is " + area);
+
+   }
+     public static void main(String[] args) {
+         
+        Rectangle myRect=new Main(); //Creating the object of class Rectangle
+        myRect.width = 40;
+        myRect.height = 50;
+        myRect.area(); //Calling the function
+    }
+}
+
+![Screenshot (179)](https://user-images.githubusercontent.com/74056455/103307920-2fc49080-4a37-11eb-9ac4-d5637a2dfb5a.png)

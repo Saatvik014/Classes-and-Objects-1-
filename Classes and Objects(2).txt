@@ -1,0 +1,33 @@
+Questions and Answers:-
+
+1)What's wrong with the following program?
+
+public class SomethingIsWrong {
+    public static void main(String[] args) {
+        Rectangle myRect;
+        myRect.width = 40;
+        myRect.height = 50;
+        System.out.println("myRect's area is " + myRect.area());
+    }
+}
+
+Ans)Rectangle class is not there so no object with Rectangle will be created.So compilation error will occur"cannot find 
+symbol".
+
+2)The following code creates one array and one string object. How many references to those objects exist after the code 
+executes? Is either object eligible for garbage collection?
+
+...
+String[] students = new String[10];
+String studentName = "Peter Parker";
+students[0] = studentName;
+studentName = null;
+...
+
+Ans)The array students has one reference to the object studentName even though that object has been assigned the value null.
+The object studentName has students[0] that refers to it.
+String object is eligible for garbage collection as its reference has been assigned null.
+
+3)How does a program destroy an object that it creates?
+Ans)A program never destroys an object,it can only make the reference of the object available for garbage collection by
+assigning null value to it.

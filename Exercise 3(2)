@@ -1,0 +1,24 @@
+Question)Given the following class, called NumberHolder, write some code that creates an instance of the class, initializes 
+its two member variables, and then displays the value of each member variable.
+
+public class NumberHolder {
+    public int anInt;
+    public float aFloat;
+}
+
+Ans)public class NumberHolder
+{
+    public int anInt; //Creating a global variable
+    public float aFloat;
+    
+     public static void main(String[] args) {
+         NumberHolder object=new NumberHolder(); //Creating an object of class NumberHolder
+         object.anInt = 5; //Assigning a value to anInt variable
+         object.aFloat = 7.2f; //Assigning a value to aFloat variable
+         System.out.println("Value of anInt variable is "+object.anInt);
+        System.out.println("Value of aFloat variable is "+object.aFloat);
+
+        
+    }
+	
+}

@@ -29,3 +29,5 @@ public class Rectangle
         myRect.area(); //Calling the function
     }
 }
+
+![Screenshot (179)](https://user-images.githubusercontent.com/74056455/103307920-2fc49080-4a37-11eb-9ac4-d5637a2dfb5a.png)
